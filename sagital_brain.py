@@ -1,3 +1,5 @@
+#!/usr/local/python3
+
 import numpy as np
 
 def run_averages(file_input, file_output):
