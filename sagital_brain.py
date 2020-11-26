@@ -1,3 +1,5 @@
+#!/usr/local/python3
+
 from argparse import ArgumentParser, ArgumentDefaultsHelpFormatter
 
 import numpy as np
