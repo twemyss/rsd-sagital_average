@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import numpy as np
 import subprocess
+import sagital_average
 
 def test_average():
     # Make new output file
@@ -9,7 +10,7 @@ def test_average():
     np.savetxt("brain_sample.csv", data_input, fmt='%d', delimiter=',')
 
     # Run sagital brain file to generate output
-    subprocess.run(['python3', 'sagital_brain.py'])
+    sagital_average.run_averages()
 
     # Load output
     loaded = np.loadtxt('brain_average.csv', delimiter=',')
